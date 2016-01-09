@@ -13,7 +13,9 @@
     <HorizontalScrollView
         android:id="@+id/hs_main"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content" 
+        android:scrollbars="none"
+        >
 
         <LinearLayout
             android:id="@+id/ll_main"
@@ -24,32 +26,49 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="头条"
+                android:clickable="true"
+                android:onClick="onClick"
                 android:textSize="15sp" />
 
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="百科"
+                android:clickable="true"
+                android:onClick="onClick"
                 android:textSize="15sp" />
 
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="资讯"
+                android:clickable="true"
+                android:onClick="onClick"
                 android:textSize="15sp" />
 
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="经营"
+                android:clickable="true"
+                android:onClick="onClick"
                 android:textSize="15sp" />
 
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="数据"
+                android:clickable="true"
+                android:onClick="onClick"
                 android:textSize="15sp" />
         </LinearLayout>
     </HorizontalScrollView>
-
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/vp_main"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    
+	    >
+	    
+	</android.support.v4.view.ViewPager>
 </LinearLayout>

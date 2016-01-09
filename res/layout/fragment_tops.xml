@@ -3,9 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
 
-	<!-- 广告轮播 -->
+    <!-- 广告轮播 -->
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="150dp" >
@@ -13,13 +13,10 @@
         <android.support.v4.view.ViewPager
             android:id="@+id/vp_tops"
             android:layout_width="match_parent"
-            android:layout_height="150dp" >
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
         </android.support.v4.view.ViewPager>
-
-        <TextView
-            android:id="@+id/tv_ad_tops"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
 
         <!-- 三个指示小点 -->
 
@@ -27,26 +24,40 @@
             android:id="@+id/ll_ad_tops"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+            android:padding="5dp"
             android:orientation="horizontal" >
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:src="@drawable/dots2" />
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:src="@drawable/dots2" />
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:src="@drawable/dots2" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_ad_tops"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" />
+
     </RelativeLayout>
-    <ListView 
-        android:id="@+id/ll_tops"
+
+    <ListView
+        android:id="@+id/lv_tops"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
-        
+        android:layout_height="match_parent" >
     </ListView>
+
 </LinearLayout>
